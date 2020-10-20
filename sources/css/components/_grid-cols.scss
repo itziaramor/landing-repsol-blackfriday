@@ -1,0 +1,200 @@
+.grid-cols {
+  padding: rem(8px) 0;
+  text-align: center;
+  overflow: hidden;
+  
+  @include mq(tablet) {
+    padding: rem(20px) 0;
+  }
+  
+  &__title {
+    margin-bottom: rem(4px);
+    font-family: $font-base;
+    font-size: rem(22px);
+    line-height: rem(24px);
+    color: $secondary-color;
+    
+    @include mq(tablet) {
+      margin-bottom: rem(13px);
+      font-size: rem(40px);
+      line-height: rem(47px);
+    }
+  }
+  &__tag {
+    margin-bottom: rem(12px);
+    font-family: $titillium-semibold;
+    font-size: rem(12px);
+    line-height: rem(14px);
+    color: $gray-color;
+    text-transform: uppercase;
+    letter-spacing: rem(1.7px);
+    
+    @include mq(tablet) {
+      margin-bottom: rem(6px);
+      font-size: rem(10px);
+      line-height: rem(10px);
+    }
+  }
+  
+  &__subtitle {
+    margin-bottom: rem(10px);
+    font-family: $font-base;
+    font-size: rem(14px);
+    line-height: rem(22px);
+    color: $text-color;
+    
+    @include mq(tablet) {
+      margin-bottom: rem(30px);
+      font-size: rem(16px);
+      line-height: rem(19px);
+    }
+  }
+  
+  &__list {
+    padding-bottom: rem(4px);
+    display: flex;
+    overflow-x: scroll;
+    
+    @include mq(tablet) {
+      padding-bottom: 0;
+    }
+    
+    @include mq(desktop-large) {
+      overflow: inherit;
+    }
+    
+    li {
+      margin: 0 rem(6px);
+      flex: 0 0 rem(169px);
+      
+      @include mq(tablet) {
+        margin: 0 rem(13px);
+        flex: 0 1 100%;
+      }
+      @include mq(desktop) {
+        margin: 0 rem(13px) rem(20px);
+      }
+      
+      // &:first-child,
+      // &:last-child {
+      //   margin: 0;
+        
+      //   @include mq(desktop) {
+      //     margin: 0 rem(13px) rem(20px);
+      //   }
+      // }
+      
+    }
+    
+    img {
+      margin-bottom: rem(10px);
+      
+      @include mq(tablet) {
+        margin-bottom: rem(18px);
+      }
+      @include mq(desktop) {
+        margin-bottom: rem(16px);
+      }
+    }
+    
+    &-title {
+      font-family: $repsol-semibold;
+      font-size: rem(12px);
+      line-height: rem(16px);
+      text-align: left;
+      color: $text-color-lightest;
+      
+      @include mq(tablet) {
+        font-size: rem(20px);
+        line-height: rem(30px);
+      }
+    }
+  }
+  
+  &__cols {
+    padding-bottom: rem(4px);
+    display: flex;
+    overflow-x: scroll;
+    
+    @include mq(tablet) {
+      overflow-x: inherit;
+    }
+    
+    &-item {
+      //margin: 0 rem(13px);
+      width: rem(169px);
+      display: inline-flex;
+      flex: 1 0 rem(182px);
+      
+      @include mq(tablet) {
+        margin: 0 rem(7px);
+        flex: 0 1 100%;
+        flex-direction: column;
+      }
+      @include mq(desktop) {
+        margin: 0 rem(13px) rem(20px);
+      }
+      
+      > div {
+        flex: 0 0 rem(169px);
+        margin: 0 rem(7px);
+        
+        @include mq(tablet) {
+          flex: auto;
+        }
+      }
+      &:nth-child(2),
+      &:nth-child(3) {
+        flex: 1 0 calc(182px * 2);
+        
+        @include mq(tablet) {
+          flex: 0 1 51%;
+        }
+        @include mq(desktop) {
+          flex: 0 1 58%;
+        }
+        
+        > div {
+          margin: 0 rem(6px);
+          flex: 0 0 rem(169px);
+          
+          @include mq(tablet) {
+            margin: 0;
+            flex: auto;
+          }
+          
+          @include mq(desktop) {
+            &:first-child {
+              margin-bottom: rem(4px);
+            }
+          }
+        }
+      }
+    }
+    
+    img {
+      margin-bottom: rem(10px);
+      max-width: 100%;
+      
+      @include mq(tablet) {
+        margin-bottom: rem(18px);
+      }
+      @include mq(desktop) {
+        margin-bottom: rem(16px);
+      }
+    }
+    
+    &-title {
+      font-family: $repsol-semibold;
+      font-size: rem(12px);
+      line-height: rem(16px);
+      text-align: left;
+      color: $text-color-lightest;
+      
+      @include mq(tablet) {
+        font-size: rem(20px);
+        line-height: rem(30px);
+      }
+    }
+  }
+}

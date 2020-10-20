@@ -1,0 +1,78 @@
+// Dev
+//-----------
+$dev: #f06;
+$dev-1: orange;
+$dev-2: deepskyblue;
+$dev-3: hotpink;
+
+// Brand Colours
+//-----------
+$primary-color: #FF8200;
+$secondary-color: #212121;
+
+// Text Colours
+//-----------
+$text-color: #272727;
+$text-color-lightest: #222222;
+$gray-color: #525252;
+$gray-color-lighter: #686868;
+$gray-color-lightest: #F2F2F2;
+$red-color: #E50229;
+$border-color: #E0DED9;
+$white-color: #ffffff;
+$orange-color: #FE8102;
+// Text Colours
+//-----------
+
+$border-color: #d1dfe5;
+
+// Generic Colours
+//-----------
+$palettes-neutral: (
+  white: (
+    base: #ffffff,
+    light: #f5f5f5,
+    dark: #fafafa,
+  ),
+  black: (
+    base: #25292a,
+    light: #6c7c8c,
+    dark: #3a4f5b,
+  ),
+  grey: (
+    base: #c9cfd3,
+    light: #f3f7f9,
+    dark: #898989,
+  ),
+);
+
+$transparent: rgba($text-color, 0);
+
+// States Colours
+//-----------
+// $error: #f24d58;
+// $success: #45c640;
+// $warning: #f09a11;
+
+// Sharing Colours
+//-----------
+// $facebook-color: #3b5998;
+// $twitter-color: #55acee;
+// $linkedin-color: #007bb6;
+// $google-plus-color: #dd4b39;
+// $youtube-color: #d30a20;
+
+// Contact Colours
+//-----------
+// $contact-color: #f9f9f9;
+// $input-color: #f0f0f0;
+
+// COLORS
+// -------------
+// $twilight-blue: #0a3160;
+// $twilight-medium: #00224c;
+// $twilight-dark: #051528;
+// $white: #ffffff;
+// $gray: #d8d8d8;
+// $gray-dark: #666666;
+// $black: #000000;

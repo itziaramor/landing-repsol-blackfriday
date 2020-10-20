@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 12" enable-background="new 0 0 8 12">
+  <g transform="translate(-7 -5)">
+    <path d="M12.9 16.5l1.3-1.3L10 11l4.2-4.2-1.3-1.3L7.4 11z"/>
+    <defs>
+      <filter id="a" filterUnits="userSpaceOnUse" x="0" y="0" width="22" height="22">
+        <feColorMatrix values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0"/>
+      </filter>
+    </defs>
+    <mask maskUnits="userSpaceOnUse" x="0" y="0" width="22" height="22" id="b">
+      <g filter="url(#a)">
+        <path fill="#fff" d="M12.9 16.5l1.3-1.3L10 11l4.2-4.2-1.3-1.3L7.4 11z"/>
+      </g>
+    </mask>
+    <g mask="url(#b)">
+      <path fill="#041e42" d="M0 0h22v22H0z"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,41 @@
+.button {
+  display: inline-block;
+  border: 0;
+  border-radius: rem(25px);
+  padding: rem(5px 20px);
+  background-image: none;
+  color: #fff;
+  font-family: $font-base;
+  font-size: rem(10px);
+  line-height: rem(15px);
+  text-align: center;
+  vertical-align: middle;
+  box-shadow: none;
+  user-select: none;
+  cursor: pointer;
+  transition: all .3s;
+  
+  @include mq(tablet) {
+    padding: rem(12px 20px);
+    font-size: rem(16px);
+    line-height: rem(25px);
+  }
+  
+  &:hover {
+    text-decoration: none;
+    box-shadow: 2px 2px 14px 0 rgba(149, 149, 149, 0.5);
+  }
+  
+  &:focus {
+    outline: 0;
+  }
+  
+  &:active,
+  &[aria-expanded="true"] {
+    background-image: none;
+  }
+  
+  &--primary {
+    background: $primary-color;
+  }
+}

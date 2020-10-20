@@ -1,0 +1,100 @@
+// Fonts
+//-----------
+@font-face {
+  font-family: "repsol-bold";
+  src: url("../fonts/Repsol-Bold.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/Repsol-Bold.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/Repsol-Bold.otf") format("opentype"), /* Open Type Font */
+    url("../fonts/Repsol-Bold.svg") format("svg"), /* Legacy iOS */
+    url("../fonts/Repsol-Bold.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("../fonts/Repsol-Bold.woff") format("woff"), /* Modern Browsers */
+    url("../fonts/Repsol-Bold.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "repsol-semiBold";
+  src: url("../fonts/Repsol-SemiBold.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/Repsol-SemiBold.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/Repsol-SemiBold.otf") format("opentype"), /* Open Type Font */
+    url("../fonts/Repsol-SemiBold.svg") format("svg"), /* Legacy iOS */
+    url("../fonts/Repsol-SemiBold.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("../fonts/Repsol-SemiBold.woff") format("woff"), /* Modern Browsers */
+    url("../fonts/Repsol-SemiBold.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "repsol-regular";
+  src: url("../fonts/Repsol.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/Repsol.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/Repsol.otf") format("opentype"), /* Open Type Font */
+    url("../fonts/Repsol.svg") format("svg"), /* Legacy iOS */
+    url("../fonts/Repsol.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("../fonts/Repsol.woff") format("woff"), /* Modern Browsers */
+    url("../fonts/Repsol.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "titillium-bold";
+  src: url("../fonts/Titillium-Bold.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/Titillium-Bold.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/Titillium-Bold.otf") format("opentype"), /* Open Type Font */
+    url("../fonts/Titillium-Bold.svg") format("svg"), /* Legacy iOS */
+    url("../fonts/Titillium-Bold.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("../fonts/Titillium-Bold.woff") format("woff"), /* Modern Browsers */
+    url("../fonts/Titillium-Bold.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "titillium-semibold";
+  src: url("../fonts/Titillium-Semibold.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/Titillium-Semibold.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/Titillium-Semibold.otf") format("opentype"), /* Open Type Font */
+    url("../fonts/Titillium-Semibold.svg") format("svg"), /* Legacy iOS */
+    url("../fonts/Titillium-Semibold.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("../fonts/Titillium-Semibold.woff") format("woff"), /* Modern Browsers */
+    url("../fonts/Titillium-Semibold.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "titillium-regular";
+  src: url("../fonts/Titillium-Regular.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/Titillium-Regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/Titillium-Regular.otf") format("opentype"), /* Open Type Font */
+    url("../fonts/Titillium-Regular.svg") format("svg"), /* Legacy iOS */
+    url("../fonts/Titillium-Regular.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("../fonts/Titillium-Regular.woff") format("woff"), /* Modern Browsers */
+    url("../fonts/Titillium-Regular.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
+$raleway: 'Raleway', sans-serif;
+
+// Font family
+//-----------
+$repsol-regular: 'repsol-regular', sans-serif;
+$repsol-semibold: 'repsol-semibold', sans-serif;
+$repsol-bold: 'repsol-bold', sans-serif;
+$titillium-regular: 'titillium-regular', sans-serif;
+$titillium-semibold: 'titillium-semibold', sans-serif;
+$titillium-bold: 'titillium-bold', sans-serif;
+
+// Font family
+//-----------
+$font-base: $repsol-regular;
+
+
+// Icon font
+// -----------
+// $ff-aeq: 'aeq-font';
+

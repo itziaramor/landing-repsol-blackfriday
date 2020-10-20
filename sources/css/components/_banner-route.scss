@@ -1,0 +1,196 @@
+.banner-route {
+  margin: 0 0 rem(8px);
+  padding: rem(35px) 0 0;
+  background-color: $gray-color-lightest;
+  overflow: hidden;
+  
+  @include mq(desktop) {
+    padding: rem(60px) 0 rem(40px);
+  }
+  @include mq(desktop-large) {
+    padding: rem(60px) 0 rem(40px);
+    overflow: inherit;
+  }
+  
+  .inner-wrapper {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    
+    @include mq(desktop) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    @include mq(desktop-large) {
+      overflow: inherit;
+    }
+  }
+  
+  &__description {
+    max-width: rem(434px);
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    
+    @include mq(desktop) {
+      margin-right: rem(64px);
+      text-align: left;
+    }
+  }
+  
+  &__logos {
+    margin: 0 auto rem(10px);
+    max-width: rem(154px);
+    width: auto;
+    
+    @include mq(desktop) {
+      margin: 0 0 rem(20px);
+      max-width: rem(256px);
+    }
+  }
+  
+  &__title {
+    margin-bottom: rem(4px);
+    font-family: $font-base;
+    font-size: rem(22px);
+    line-height: rem(24px);
+    color: $secondary-color;
+    
+    @include mq(desktop) {
+      margin-bottom: rem(20px);
+      font-size: rem(40px);
+      line-height: rem(40px);
+    }
+  }
+  
+  &__text {
+    margin-bottom: rem(20px);
+    font-family: $font-base;
+    font-size: rem(14px);
+    line-height: rem(22px);
+    color: $text-color;
+    
+    @include mq(desktop) {
+      margin-bottom: rem(15px);
+      font-size: rem(16px);
+      line-height: rem(19px);
+    }
+  }
+  
+  .button {
+    width: 100%;
+    margin-top: 0;
+    padding: rem(12px) rem(20px);
+    font-size: rem(16px);
+    line-height: rem(25px);
+    
+    @include mq(desktop) {
+      margin-top: rem(46px);
+      width: auto;
+    }
+  }
+  
+  &__list {
+    padding-top: rem(19px);
+    padding-bottom: rem(20px);
+    display: flex;
+    overflow-x: auto;
+
+    @include mq(desktop) {
+      overflow-x: auto;
+    }
+    @include mq(desktop-large) {
+      width: calc(100% - 376px);
+      overflow-x: inherit;
+    }
+  }
+  
+  &__list-item {
+    margin: rem(9px) rem(15px) 0;
+    text-align: center;
+    flex: 1 0 rem(119px);
+
+    @include mq(tablet) {
+      flex: 0 1 rem(156px);
+    }
+    
+    @include mq(desktop) {
+      flex: 0 1 100%;
+    }
+    
+    img {
+      margin: 0 auto;
+      max-width: rem(96px);
+      width: auto;
+      border-radius: 50%;
+      box-shadow: rem(4px) rem(4px) rem(14px) rgba(182, 182, 182, 0.5);
+
+      @include mq(tablet) {
+        max-width: rem(140px);
+      }
+      
+      @include mq(desktop) {
+        max-width: rem(160px);
+      }
+    }
+    
+    p {
+      margin-top: rem(14px);
+      font-family: $repsol-semibold;
+      font-size: rem(14px);
+      line-height: rem(17px);
+      color: $secondary-color;
+      
+      @include mq(tablet) {
+        font-size: rem(16px);
+        line-height: rem(19px);
+      }
+    }
+    
+    // states
+    &.active {
+      p {
+        color: $red-color;
+      }
+      
+      a {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+
+        img {
+          box-shadow: none;
+        }
+        
+        &::after {
+          content: '';
+          width: rem(104px);
+          height: rem(104px);
+          border-radius: 50%;
+          border: rem(4px) solid $red-color;
+          position: absolute;
+          top: rem(-8px);
+          left: 0;
+          right: 0;
+          margin: 0 auto;
+
+          @include mq(tablet) {
+            width: rem(150px);
+            height: rem(150px);
+            left: rem(-3px);
+            top: rem(-9px);
+          }
+          
+          @include mq(desktop) {
+            max-width: rem(168px);
+            max-height: rem(168px);
+            width: calc(100% + 8px);
+            height: 100%;
+            top: rem(-8px);
+            left: rem(-8px);
+          }
+        }
+      }
+    }
+  }
+}

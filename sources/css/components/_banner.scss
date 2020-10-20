@@ -1,0 +1,58 @@
+.banner {
+  padding: rem(8px) 0 rem(68px);
+  
+  &__content {
+    padding: rem(15px) rem(10px) rem(15px);
+    border-radius: rem(8px);
+    border: 1px solid $border-color;
+    background-color: $white-color;
+    background-image: url('../img/banner/bg-mob.svg');
+    background-repeat: no-repeat;
+    background-position: 98% bottom;
+    box-shadow: rem(2px) rem(2px) rem(8px) 0 rgba(182, 182, 182, 0.5);
+    text-align: center;
+
+    @include mq(tablet) {
+      padding: rem(25px) rem(10px) rem(20px);
+    }
+    @include mq(desktop) {
+      background-image: url('../img/banner/bg-01.svg'), url('../img/banner/bg-02.svg');
+      background-position: left bottom, calc(100% + 30px) bottom;
+    }
+  }
+  
+  &__description {
+    max-width: rem(234px);
+    text-align: left;
+
+    @include mq($mobile-landscape) {
+      max-width: rem(450px);
+    }
+    
+    @include mq(tablet) {
+      max-width: rem(558px);
+    }
+    @include mq(desktop) {
+      margin: 0 auto;
+      text-align: center;
+    }
+  }
+  
+  &__title {
+    margin-bottom: rem(28px);
+    font-family: $font-base;
+    font-size: rem(16px);
+    line-height: rem(20px);
+    color: $secondary-color;
+    text-align: left;
+    
+    @include mq(tablet) {
+      margin-bottom: rem(33px);
+      font-size: rem(26px);
+      line-height: rem(30px);
+    }
+    @include mq(desktop) {
+      text-align: center;
+    }
+  }
+}

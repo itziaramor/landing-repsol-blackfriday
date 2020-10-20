@@ -1,0 +1,40 @@
+.outer-wrap {
+  max-width: rem(1440px);
+  margin: 0 auto;
+
+  font-family: $font-base;
+  font-size: rem(16px);
+  color: $text-color;
+
+  a {
+    text-decoration: none;
+  }
+
+  img {
+    display: block;
+    height: auto;
+  }
+}
+
+.inner-wrapper {
+  padding-left: rem(16px);
+  padding-right: rem(16px);
+
+  @include mq(tablet) {
+    padding-left: rem(19px);
+    padding-right: rem(19px);
+  }
+  @include mq(desktop) {
+    max-width: rem(1200px); // confirmar con el sketch
+    margin: 0 auto;
+  }
+  @include mq(desktop_wider) {
+    padding-left: 0;
+    padding-right: 0;
+
+    .iexplorer & {
+      max-width: none;
+      width: rem(1003px);
+    }
+  }
+}

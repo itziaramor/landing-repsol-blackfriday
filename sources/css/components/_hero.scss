@@ -1,0 +1,75 @@
+.hero {
+  padding-bottom: rem(4px);
+  position: relative;
+  overflow: hidden;
+
+  @include mq(tablet) {
+    padding-bottom: 0;
+  }
+  
+  .inner-wrapper {
+    margin: 0 rem(-16px);
+    height: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    
+    @include mq(tablet) {
+      margin: 0 auto;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+    }
+  }
+  
+  &__content {
+    padding: 0 rem(16px);
+    text-align: center;
+    @include mq(desktop) {
+      width: calc(100% - 600px);
+      padding: 0;
+      text-align: left;
+    }
+  }
+  
+  &__image {
+    margin-bottom: rem(10px);
+    width: 100%;
+    @include mq(tablet) {
+      max-width: 100%;
+      margin-bottom: 0;
+      transform: translateX(18px);
+    }
+    @include mq(desktop) {
+      margin-bottom: 0;
+      width: auto;
+      transform: translateX(120px);
+    }
+  }
+  
+  &__title {
+    margin-bottom: rem(4px);
+    font-family: $font-base;
+    font-size: rem(36px);
+    line-height: rem(45px);
+    color: $secondary-color;
+    
+    @include mq(desktop) {
+      margin-bottom: rem(20px);
+      font-size: rem(65px);
+      line-height: rem(81px);
+    }
+  }
+  
+  &__text {
+    margin-bottom: 0;
+    font-family: $font-base;
+    font-size: rem(16px);
+    line-height: rem(22px);
+    color: $text-color;
+    
+    @include mq(desktop) {
+      font-size: rem(16px);
+      line-height: rem(20px);
+    }
+  }
+}
