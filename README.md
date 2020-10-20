@@ -1,9 +1,8 @@
 # Repsol Black friday
 
 ## Install
-Install node.js.
-Install gulp
-npm install command
+npm install
+gulp 
 
 ## Development server
 
